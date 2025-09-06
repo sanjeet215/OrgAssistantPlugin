@@ -1,0 +1,35 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.example.OrgAssistantPlugin</id>
+
+    <!-- Public plugin name should be written in Title Case. -->
+    <name>Org Assistant Plugin</name>
+
+    <!-- Vendor Information -->
+    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+
+    <!-- Description -->
+    <description><![CDATA[
+        Org Assistant Plugin helps developers in your organization with:<br>
+        <ul>
+            <li>🤖 AI-powered coding assistance</li>
+            <li>📑 Summarizing JIRA tickets & functional docs</li>
+            <li>📝 Auto-generating documentation</li>
+            <li>💡 Explaining code snippets</li>
+            <li>🔍 Simple NLP utilities</li>
+        </ul>
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extensions (ToolWindow, Actions, etc.) -->
+    <extensions defaultExtensionNs="com.intellij">
+
+        <!-- Register AI Assistance Tool Window -->
+        <toolWindow id="AI_Assistance"
+                    anchor="right"
+                    factoryClass="com.example.orgassistantplugin.AiToolWindowFactory"/>
+    </extensions>
+</idea-plugin>

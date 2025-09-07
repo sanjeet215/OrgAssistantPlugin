@@ -28,7 +28,7 @@
     <extensions defaultExtensionNs="com.intellij">
 
         <!-- Register AI Assistance Tool Window -->
-        <toolWindow id="AI_Assistance"
+        <toolWindow id="Cool"
                     anchor="right"
                     factoryClass="com.example.orgassistantplugin.AiToolWindowFactory"/>
     </extensions>

@@ -63,6 +63,11 @@ public class TimeZoneConverterDialog extends DialogWrapper {
         return panel;
     }
 
+    /**
+     * Converts the date and time selected in the spinner from the source time zone to the target time zone.
+     * The result is formatted as "yyyy-MM-dd HH:mm" and displayed in the result label.
+     * This method is triggered by the Convert button in the dialog.
+     */
     private void doConvert() {
         java.util.Date selectedDate = (java.util.Date) dateTimeSpinner.getValue();
         LocalDateTime localDateTime = LocalDateTime.ofInstant(selectedDate.toInstant(), ZoneId.systemDefault());
